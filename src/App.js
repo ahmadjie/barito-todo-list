@@ -17,7 +17,7 @@ class App extends Component {
 
   componentDidMount() {
     axios
-      .get(`http://worldtimeapi.org/api/timezone/Asia/Jakarta`)
+      .get(`https://worldtimeapi.org/api/timezone/Asia/Jakarta`)
       .then(res => {
         this.setState({
           date: res.data.datetime,
